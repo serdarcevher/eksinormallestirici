@@ -318,6 +318,11 @@ html.no-touch #partial-index::-webkit-scrollbar-thumb {
   border-radius:4px !important;
 }
 
+html.no-touch .dark-theme #partial-index::-webkit-scrollbar-thumb {
+  background-color: #3B3B3B !important;
+  border-radius:4px !important;
+}
+
 html.no-touch .topic-list li>a:hover {
   background-color:#d8d8d8 !important;
 }
