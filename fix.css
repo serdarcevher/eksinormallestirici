@@ -152,6 +152,10 @@ div#logo {
   font-size:1em !important;
 }
 
+.tabs>li.active {
+  border-bottom-color:#ebebeb !important;
+}
+
 #container {
   padding-top:0px !important;
 }
@@ -234,7 +238,6 @@ fieldset.vertical {
     margin:0 !important;
   }
 }
-
 
 
 
