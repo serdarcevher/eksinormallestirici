@@ -17,6 +17,5 @@
       "matches": ["https://eksisozluk.com/*"],
       "css": ["fix.css"]
     }
-  ],
-  "permissions":["https://eksisozluk.com/*"]
+  ]
 }
