@@ -12,6 +12,13 @@ if($(".showall").html() != undefined){
 
 if(currentPage != undefined){
 
+    //Arastir dugmesini geri getir
+    var title = $("#title").text().replace(/'/g, "").trim();
+    $(".sub-title-menu").prepend("<div><a href='https://google.com/search?q="+title+"' target='_blank'>araştır</a></div>");
+
+    //Sub-etha dugmesini geri getir
+    $(".dropdown-menu").prepend("<li><a href='https://eksisozluk.com/sub-etha' target='_blank'>sub-etha</a></li>");
+
     var topicPageSize = 10;
 
     chrome.storage.sync.get("topicPageSize", function (result) {
