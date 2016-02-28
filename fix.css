@@ -176,6 +176,20 @@ ul#entry-list {
   font-size:.9em !important;
 }
 
+#entry-list footer .permalink {
+  font-size:.6em;
+  color:#666 !important;
+}
+
+#entry-list footer .entry-date {
+  font-size:0.7em !important;
+  opacity:0.5 !important;
+}
+
+#entry-list footer .entry-author {
+  font-size:.9em !important;
+}
+
 #topic>h1 {
   font-size:25px !important;
   font-weight:normal !important;
