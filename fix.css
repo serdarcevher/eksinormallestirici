@@ -71,7 +71,7 @@ body.light-theme.theme-disabled>header {
   color:#d4d4d4 !important;
 }
 
-li#options-dropdown a svg {
+li#options-dropdown a svg, li.dropdown a.dropdown-toggle svg {
   fill:#d4d4d4 !important;
 }
 
