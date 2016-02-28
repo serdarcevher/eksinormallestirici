@@ -337,3 +337,29 @@ span.read-more-link-wrapper {
 ul.topic-list a.empty-index-item {
   opacity:0.3 !important;
 }
+
+
+
+/**
+* entry number
+*/
+#entry-list>li {
+    position: relative;
+    padding: 4px 0 50px 0 !important;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+#entry-list>li:first-child{
+    border-top: 1px solid #D2D2D2 !important;
+}
+
+#entry-list > li:before {
+    font-size: .8em;
+    position: absolute;
+    content: attr(value);
+    top: -16px;
+    left: 0;
+    display: block;
+    width: 100%;
+    color: #666;
+}
