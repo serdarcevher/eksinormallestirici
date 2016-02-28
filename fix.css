@@ -11,6 +11,15 @@ body {
   line-height:1.618 !important;
 }
 
+input, select, textarea {
+  font-family:Verdana,sans-serif !important;
+  font-size:12px !important;
+}
+
+.ui-autocomplete {
+  background-color:#ebebeb !important;
+}
+
 body.dark-theme {
   background-color:#000 !important;
   font-family:Verdana,sans-serif !important;
@@ -18,6 +27,10 @@ body.dark-theme {
   font-weight:normal !important;
   color:#ebebeb !important;
   line-height:1.618 !important;
+}
+
+.dark-theme .ui-autocomplete {
+  background-color:#000 !important;
 }
 
 a {
@@ -292,4 +305,15 @@ html.no-touch .topic-list li>a:hover {
 
 html.no-touch body.dark-theme .topic-list li>a:hover {
   background-color:#2B2B2B !important;
+}
+
+
+
+
+#entry-list .content {
+  max-height:100% !important;
+}
+
+span.read-more-link-wrapper {
+  display:none !important;
 }
