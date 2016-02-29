@@ -435,3 +435,7 @@ font-size: 90%;
 }
 .ui-autocomplete-input+.spin{
 visibility: hidden;}
+
+#options-dropdown{
+margin-left: 20px !important;
+}
