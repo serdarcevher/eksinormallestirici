@@ -6,7 +6,7 @@ body {
   font-size:75% !important;
 }
 
-body, .modal {
+body, .modal, #top-bar>#advanced-search-form {
   background-color:#ebebeb !important;
   font-family:Verdana,sans-serif !important;
   font-weight:normal !important;
@@ -23,7 +23,7 @@ input, select, textarea {
   background-color:#ebebeb !important;
 }
 
-body.dark-theme, body.dark-theme .modal {
+body.dark-theme, body.dark-theme .modal, body.dark-theme #top-bar>#advanced-search-form {
   background-color:#2d2d2d !important;
   font-family:Verdana,sans-serif !important;
   font-weight:normal !important;
@@ -419,21 +419,21 @@ margin-left: 25px !important;
 }
 
 .eksico{
-margin-top: 0px;
+margin-top: 0px !important;
 }
 
 .favorite-list-popup ul li>a{
-font-size:90%;
+font-size:90% !important;
 }
 
 .favorite-list-popup{
-background-color:rgba(245, 245, 245, 0.95);
+background-color:rgba(245, 245, 245, 0.95) !important;
 }
 
 .dropdown .dropdown-menu li>a{
-line-height: 2;
-padding: 0 8px;
-font-size: 90%;
+line-height: 2 !important;
+padding: 0 8px !important;
+font-size: 90% !important;
 }
 
 #search-form span.spin {
@@ -446,4 +446,87 @@ margin-left: 20px !important;
 
 .modal {
   font-size:120% !important;
+}
+
+article.unread {
+  background-color:#F7F7F7 !important;
+}
+
+.dark-theme article.unread {
+  background-color:#5C5C5C !important;
+}
+
+.dark-theme #top-bar>#advanced-search-form {
+  color:white !important;
+}
+
+button.primary, button.primary:hover {
+  background-image:-webkit-linear-gradient(top,#4d72a6,#3d5a84) !important;
+  background-repeat: repeat-x !important;
+  background-color:#456698 !important;
+  font-family:Verdana,sans-serif !important;
+  color:white !important;
+  border:0px !important;
+  outline:0px !important;
+}
+
+.dark-theme button.primary, dark-theme button.primary:hover {
+  background-color:#BA9967 !important;
+  font-family:Verdana,sans-serif !important;
+  color:white !important;
+  border:0px !important;
+  outline:0px !important;
+}
+
+#entry-list footer .other .eksico {
+  fill: #0027b8 !important;
+}
+
+.dark-theme #entry-list footer .other .eksico {
+  fill: #d89630 !important;
+}
+
+#search-form button[type=submit] {
+  box-shadow:0 1px 2px rgba(0,0,0,0.1) !important;
+  background-color:#ffc600 !important;
+  background-image:-webkit-linear-gradient(top,#ffcc1a,#e6b200) !important;
+  background-repeat:repeat-x !important;
+  border:1px solid #b38b00 !important;
+  font-family:Verdana,sans-serif !important;
+  color: #000 !important;
+  margin-left:5px !important;
+  width: auto !important;
+  height:25px !important;
+  padding:0px 10px !important;
+  border-radius:3px !important;
+}
+
+#search-form #search-textbox {
+  width:300px !important;
+}
+
+a#a3-toggle {
+  margin-left:0px !important;
+  color:white !important;
+}
+
+a#a3-toggle:after {
+  color:white !important;
+  text-indent:0 !important;
+  width:auto !important;
+  height:auto !important;
+  opacity:1 !important;
+  content: "ara \2193" !important;
+  border-left:0 !important;
+  border-top:0 !important;
+  border-right:0 !important;
+  margin-left:0 !important;
+  margin-top:-5px !important;
+}
+#search-form button[type=submit]:after {
+  content: 'getir' !important;
+}
+
+#search-form button[type=submit] svg {
+  display:none !important;
 }
