@@ -415,3 +415,23 @@ ul.topic-list a.empty-index-item {
 .stats.partial {
 margin-left: 25px !important;
 }
+
+.eksico{
+margin-top: 0px;
+}
+
+.favorite-list-popup ul li>a{
+font-size:90%;
+}
+
+.favorite-list-popup{
+background-color:rgba(245, 245, 245, 0.95);
+}
+
+.dropdown .dropdown-menu li>a{
+line-height: 2;
+padding: 0 8px;
+font-size: 90%;
+}
+.ui-autocomplete-input+.spin{
+visibility: hidden;}
