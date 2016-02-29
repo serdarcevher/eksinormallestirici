@@ -3,9 +3,12 @@ html.no-touch>body {
 }
 
 body {
+  font-size:75% !important;
+}
+
+body, .modal {
   background-color:#ebebeb !important;
   font-family:Verdana,sans-serif !important;
-  font-size:75% !important;
   font-weight:normal !important;
   color:#000 !important;
   line-height:1.618 !important;
@@ -20,10 +23,9 @@ input, select, textarea {
   background-color:#ebebeb !important;
 }
 
-body.dark-theme {
+body.dark-theme, body.dark-theme .modal {
   background-color:#2d2d2d !important;
   font-family:Verdana,sans-serif !important;
-  font-size:75% !important;
   font-weight:normal !important;
   color:#91989c !important;
   line-height:1.618 !important;
@@ -433,9 +435,15 @@ line-height: 2;
 padding: 0 8px;
 font-size: 90%;
 }
-.ui-autocomplete-input+.spin{
-visibility: hidden;}
+
+#search-form span.spin {
+display: none !important;
+}
 
 #options-dropdown{
 margin-left: 20px !important;
+}
+
+.modal {
+  font-size:120% !important;
 }
