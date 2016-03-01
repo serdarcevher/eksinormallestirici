@@ -57,6 +57,11 @@ body.light-theme.theme-disabled>header {
   color:#fff !important;
 }
 
+body.theme-enabled > header {
+  background-color: #333 !important;
+  color: #fff !important;
+}
+
 #sub-navigation {
   height:25px !important;
 }
@@ -83,6 +88,10 @@ body.light-theme.theme-disabled>header {
 #sub-navigation #quick-index-nav {
   display:inline-block !important;
   height:25px !important;
+}
+
+#sub-navigation #quick-index-nav a {
+	transition: none!important;
 }
 
 #options-dropdown ul.dropdown-menu li>a {
@@ -123,6 +132,16 @@ body.light-theme.theme-disabled>header {
 li#options-dropdown a svg, li.dropdown a.dropdown-toggle svg {
   fill:#d4d4d4 !important;
 }
+
+
+.dark-theme li#options-dropdown a svg, .dark-theme li.dropdown a.dropdown-toggle svg {
+  visibility:visible !important;
+}
+
+.dark-theme #top-bar .eksico {
+  visibility: hidden;
+}
+
 
 .dropdown .dropdown-menu {
   background-color:#ebebeb !important;
@@ -189,6 +208,15 @@ div#logo {
   border-right:0px !important;
 }
 
+ol.topic-list.partial {
+	list-style: none!important;
+	margin-left: 0!important;
+}
+
+ol.topic-list.partial > li {
+
+}
+
 .topic-list li {
   border-top:1px solid #d7d7d7 !important;
 }
@@ -213,13 +241,29 @@ div#logo {
   font-size:1em !important;
 }
 
-.tabs>li.active {
-  border-bottom-color:#ebebeb !important;
+.light-theme .tabs {
+	border-bottom: 1px solid #d2d2d2!important;
+    margin-bottom: 4px!important;
 }
 
-.dark-theme .tabs>li.active {
-  border-bottom-color:#2d2d2d !important;
+.light-theme .tabs>li {
+    display: inline-block!important;
+    margin-bottom: -1px!important;
+    -webkit-border-radius: 4px 4px 0 0!important;
+    -moz-border-radius: 4px 4px 0 0!important;
+    border-radius: 4px 4px 0 0!important;
 }
+
+.light-theme .tabs>li:hover {
+    background-color: #d8d8d8!important;
+}
+
+.light-theme .tabs>li.active {
+	background-color: transparent!important;
+	border: 1px solid #d2d2d2!important;
+    border-bottom-color: #ebebeb!important;
+}
+
 
 #container {
   padding-top:0px !important;
@@ -494,6 +538,7 @@ button.primary, button.primary:hover {
 }
 
 #search-form button[type=submit] {
+  float:left!important;
   box-shadow:0 1px 2px rgba(0,0,0,0.1) !important;
   background-color:#ffc600 !important;
   background-image:-webkit-linear-gradient(top,#ffcc1a,#e6b200) !important;
@@ -503,32 +548,51 @@ button.primary, button.primary:hover {
   color: #000 !important;
   margin-left:5px !important;
   width: auto !important;
-  height:25px !important;
+  height:26px !important;
   padding:0px 10px !important;
   border-radius:3px !important;
 }
 
 #search-form #search-textbox {
   width:300px !important;
+  padding-left: 5px!important;
+  border-radius: 2px!important;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1)!important;
+  padding: 2px 4px!important;
+  border: 1px solid #d2d2d2!important;
 }
 
 a#a3-toggle {
+  display: inline-block!important;
   margin-left:0px !important;
-  color:white !important;
+  color: #eee!important;
+  width:50px!important;
+}
+
+a#a3-toggle:before {
+	margin-left: 10px!important;
+	float: left!important;
+	content: 'ara';
 }
 
 a#a3-toggle:after {
-  color:white !important;
-  text-indent:0 !important;
+
+	float: left!important;
+	margin-top: 12px!important;
+
   width:auto !important;
   height:auto !important;
-  opacity:1 !important;
-  content: "ara \2193" !important;
-  border-left:0 !important;
-  border-top:0 !important;
-  border-right:0 !important;
-  margin-left:0 !important;
-  margin-top:-5px !important;
+  opacity:0.7 !important;
+
+  content: '\2193'!important;
+  overflow: hidden!important;
+  text-indent: -99999px!important;
+
+    vertical-align: middle!important;
+    border-left: 4px solid transparent!important;
+    border-right: 4px solid transparent!important;
+    border-top: 4px solid #fff!important;
+
 }
 #search-form button[type=submit]:after {
   content: 'getir' !important;
@@ -536,4 +600,29 @@ a#a3-toggle:after {
 
 #search-form button[type=submit] svg {
   display:none !important;
+}
+
+#overlay {
+	display: none!important;
+}
+
+.ui-autocomplete:before,
+.ui-autocomplete:after {
+	display: none!important;
+}
+
+ul.dropdown-menu.toggles-menu.open {
+	overflow: visible!important;
+	max-height: inherit!important;
+}
+
+ul.dropdown-menu.toggles-menu.open > li:hover {
+	background-color: #d8d8d8!important;
+}
+
+ul.dropdown-menu.toggles-menu.open > li > a {
+    display: block!important;
+    width: 100%!important;
+    line-height: 2.5!important;
+    padding: 0 8px!important;
 }
