@@ -57,6 +57,11 @@ body.light-theme.theme-disabled>header {
   color:#fff !important;
 }
 
+body.theme-enabled > header {
+  background-color: #333 !important;
+  color: #fff !important;
+}
+
 #sub-navigation {
   height:25px !important;
 }
