@@ -254,6 +254,13 @@ ul#entry-list {
   color:#666 !important;
 }
 
+#entry-list footer .entry-entry-id {
+	opacity:0.5 !important;
+	font-size:0.7em !important;
+	margin-right: 5px;
+	color:#666 !important;
+}
+
 #entry-list footer .entry-date {
   font-size:0.7em !important;
   opacity:0.5 !important;
@@ -396,7 +403,7 @@ ul.topic-list a.empty-index-item {
     font-size: .8em;
     position: absolute;
     content: attr(value);
-    top: -16px;
+    top: -18px;
     left: 0;
     display: block;
     width: 100%;

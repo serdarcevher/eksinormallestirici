@@ -35,5 +35,18 @@ if(currentPage != undefined){
             }
             $(obj).attr("value", count);
         });
+		
    });
 }
+
+$("a.entry-date.permalink").each(function(i, elem){
+
+	var link = $(elem);
+	
+	var entryId = link.attr("href").replace(/[^0-9]+/i, "");
+	
+	var entryIdLink = $("<a/>", { href : link.attr("href"), html: "#" + entryId, class : "entry-entry-id" });
+	
+	link.parent().prepend(entryIdLink);
+	
+});	
