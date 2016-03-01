@@ -1,10 +1,9 @@
 {
   "name": "Eksi Normallestirici",
   "manifest_version": 2,
-  "version": "0.95",
+  "version": "0.96",
   "description": "Ekşi Sözlük renklerini orijinal haline döndürür",
   "author": "Serdar Cevher",
-  "options_page": "options.html",
   "permissions": ["storage"],
   "icons": { "16": "icon16.png",
            "48": "icon48.png",
