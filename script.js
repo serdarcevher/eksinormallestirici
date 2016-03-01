@@ -63,7 +63,14 @@
 			
 				var $entry = $(entryElement);
 				
-				$entry.attr("value", (($currentPage-1) * $entryPerPage + ($entryIndex+1) + $moreCount ));
+				var $entryNumber = $moreCount + $entryIndex + 1;
+				
+				if ( $moreCount == 0 )
+				{
+					$entryNumber += ($currentPage-1) * $entryPerPage;
+				}
+				
+				$entry.attr("value", $entryNumber);
 				
 				$entry.find("a.entry-date.permalink").prepend("#" + $entry.attr("data-id") + " ");
 					
