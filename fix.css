@@ -230,7 +230,7 @@ ul#entry-list {
 }
 
 #entry-list>li:first-child {
-  padding-top:0 !important;
+  padding-top:4px !important;
 }
 
 #entry-list>li {
