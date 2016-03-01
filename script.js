@@ -45,7 +45,7 @@
 	function setEntryNumbers($entryPerPage)
 	{
 		var $entryWrapper = $(document.getElementById("entry-list"));
-		var $currentPage = parseInt($("div.pager").attr("data-currentpage")) || 1;
+		var $currentPage = parseInt($("div.pager-container > div.pager").attr("data-currentpage")) || 1;
 		
 		if ( $entryWrapper.length )
 		{
