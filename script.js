@@ -59,23 +59,14 @@
 				$moreCount += parseInt($moreElement.html().match(/[0-9]+/)[0]);
 			}
 		
-			$children.each(function(entryIndex, entry){
+			$children.each(function($entryIndex, entryElement){
 			
-				var $entry = $(entry);
-				var $entryId = $entry.attr("data-id");
-				var $entryIndex = entryIndex + 1;
+				var $entry = $(entryElement);
 				
-				$entry.attr("value", (($currentPage-1) * $entryPerPage + $entryIndex + $moreCount ));
+				$entry.attr("value", (($currentPage-1) * $entryPerPage + ($entryIndex+1) + $moreCount ));
 				
-				$entry.find("a.entry-date.permalink").each(function(i, entryLink){
-
-					var $entryLink = $(entryLink);
-					var $entryIdElement = $("<a/>", { href : $entryLink.attr("href"), html: "#" + $entryId, class : "entry-entry-id" });
-				
-					$entryLink.parent().prepend($entryIdElement);
-
-				});		
-				
+				$entry.find("a.entry-date.permalink").prepend("#" + $entry.attr("data-id") + " ");
+					
 			});
 		}
 	}
