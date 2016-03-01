@@ -258,6 +258,14 @@ ol.topic-list.partial > li {
     background-color: #d8d8d8!important;
 }
 
+.light-theme #feed-info > a:hover{
+  background: #d7d7d7;
+}
+
+.dark-theme #feed-info > a:hover{
+  background: #4A4A4A;
+}
+
 .light-theme .tabs>li.active {
 	background-color: transparent!important;
 	border: 1px solid #d2d2d2!important;
