@@ -620,6 +620,10 @@ ul.dropdown-menu.toggles-menu.open > li:hover {
 	background-color: #d8d8d8!important;
 }
 
+.dark-theme ul.dropdown-menu.toggles-menu.open > li:hover {
+  background-color: #4A4A4A!important;
+}
+
 ul.dropdown-menu.toggles-menu.open > li > a {
     display: block!important;
     width: 100%!important;
