@@ -646,3 +646,27 @@ ul.dropdown-menu.toggles-menu.open > li > a {
     line-height: 2.5!important;
     padding: 0 8px!important;
 }
+
+.dark-theme #topic-channel-info #topic-channel-options>li>.name.active {
+  background-color: #1f1f1f!important;
+}
+
+.light-theme #topic-channel-info #topic-channel-options>li>.name.active {
+  background-color: #BBDD66!important;
+}
+
+.light-theme #topic-channel-info #topic-channel-options>li>.name.passive {
+  background-color: #ebebeb!important;
+}
+
+.dark-theme #topic-channel-info #topic-channel-options>li>.name.passive {
+  background-color: #4A4A4A!important;
+}
+
+.dark-theme #topic-channel-info #topic-channel-options>li>.name {
+  color: #d89630!important;
+}
+
+.light-theme #topic-channel-info #topic-channel-options>li>.name {
+  color: black!important;
+}
