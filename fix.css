@@ -285,14 +285,6 @@ ul#entry-list {
   padding-top:4px !important;
 }
 
-#entry-list>li {
-  border-bottom:1px solid #d2d2d2 !important;
-}
-
-.dark-theme #entry-list>li {
-  border-bottom:1px solid #4A4A4A !important;
-}
-
 #entry-list footer .feedback a {
   color:#666 !important;
 }
@@ -447,11 +439,14 @@ ul.topic-list a.empty-index-item {
 #entry-list>li {
     position: relative;
     padding: 4px 0 50px 0 !important;
-    border-bottom: 1px solid #D2D2D2;
 }
 
-#entry-list>li:first-child{
+#entry-list>li {
     border-top: 1px solid #D2D2D2 !important;
+}
+
+#entry-list>li:last-child{
+    border-top: 0 !important;
 }
 
 #entry-list > li:before {
@@ -465,11 +460,12 @@ ul.topic-list a.empty-index-item {
     color: #666;
 }
 
-.dark-theme #entry-list>li:first-child {
+.dark-theme #entry-list>li {
   border-top: 1px solid #4A4A4A !important;
 }
-.dark-theme #entry-list>li {
-  border-bottom: 1px solid #4A4A4A !important;
+
+.dark-theme #entry-list>li:last-child {
+  border-bottom: 0 !important;
 }
 
 .pager select{
