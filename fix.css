@@ -681,3 +681,74 @@ ul.dropdown-menu.toggles-menu.open > li > a {
 .light-theme #topic-channel-info #topic-channel-options>li>.name {
   color: black!important;
 }
+
+
+
+/* başlık altındaki şükela modu - başlıkta ara - taşı - takip et menüsü */
+
+div.sub-title-menu {
+  margin-top:-10px !important;
+  margin-bottom:10px !important;
+}
+
+div.sub-title-menu a {
+  font-size:.9em !important;
+}
+
+.light-theme div.sub-title-menu a {
+  color:#666 !important;
+}
+
+.dark-theme div.sub-title-menu a {
+  color:#4A4A4A !important;
+}
+
+
+/* başlıkta ara bölümü */
+
+.light-theme #in-topic-search-options {
+  background-color:#ebebeb !important;
+}
+
+.dark-theme #in-topic-search-options {
+  background-color:#2d2d2d !important;
+}
+
+
+/* şükela modu restorasyonu */
+
+.light-theme span.nice-modu-toggler {
+  color:#ebebeb !important;
+}
+
+.dark-theme span.nice-modu-toggler {
+  color:#2d2d2d !important;
+}
+
+span.nice-modu-toggler {
+  margin-left: -80px !important;
+}
+
+span.nice-modu-toggler a span {
+  display:none !important;
+}
+
+.light-theme span.nice-modu-toggler a:after {
+  content: 'şükela modu';
+  color: #666 !important;
+}
+
+.dark-theme span.nice-modu-toggler a:after {
+  content: 'şükela modu';
+  color: #4A4A4A !important;
+}
+
+.light-theme a#sukela-mod-link:after {
+  color:#53a245 !important;
+  font-weight:500 !important;
+}
+
+.dark-theme a#sukela-mod-link:after {
+  color:#165616 !important;
+  font-weight:500 !important;
+}
