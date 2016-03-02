@@ -9,9 +9,10 @@
 	
 		$searcherTab.prepend("<li><a href='https://google.com/search?q="+$titleValue+"' target='_blank'>araştır</a></li>");
 	}
-	
-	$(".dropdown-menu").prepend("<li><a href='/sub-etha' target='_blank'>sub-etha</a></li>");	
-	
+
+	$("#options-dropdown > ul").prepend("<li><a href='/sub-etha' target='_blank'>sub-etha</a></li>");
+	$('#top-navigation > ul > li[class="dropdown mobile-only"] > ul').prepend("<li class='mobile-only'><a href='/sub-etha' target='_blank'>sub-etha</a></li>");
+
 	// Kullanıcı Giriş Yapmış Mı?
 	var $topNavigation = $(document.getElementById("top-navigation"));
 	var $optionsLink = $topNavigation.find("a[href='/ayarlar/tercihler']");
