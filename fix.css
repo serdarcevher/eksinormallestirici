@@ -610,6 +610,11 @@ a#a3-toggle:after {
   display:none !important;
 }
 
+.light-theme li.channel > a{
+  background: #BBDD66!important;
+  color:black!important;
+}
+
 #overlay {
 	display: none!important;
 }
