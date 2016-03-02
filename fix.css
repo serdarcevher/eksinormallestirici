@@ -297,6 +297,9 @@ ul#entry-list {
   color:#666 !important;
 }
 
+.dark-theme #entry-list footer .feedback svg{
+  fill: #4A4A4A;
+}
 #entry-list footer .favorite-count {
   font-size:.9em !important;
 }
