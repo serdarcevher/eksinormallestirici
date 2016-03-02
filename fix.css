@@ -331,9 +331,11 @@ ul#entry-list {
   font-size:.9em !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family:Calibri,Helvetica,Verdana,sans-serif !important;
-  font-weight:normal !important;
+h1,h2,h3,h4,h5,h6 {
+    font-family: Calibri,Helvetica,Verdana,sans-serif !important;
+    font-weight: normal !important;
+    color: #000 !important;
+    line-height: 1.618 !important;
 }
 
 h1 {
@@ -568,8 +570,8 @@ margin-left: 20px !important;
   font-size:120% !important;
 }
 
-article.unread {
-  background-color:#F7F7F7 !important;
+#threads li article.unread h2 {
+  font-weight: bold !important;
 }
 
 .dark-theme article.unread {
