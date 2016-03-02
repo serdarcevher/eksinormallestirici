@@ -331,11 +331,6 @@ ul#entry-list {
   font-size:.9em !important;
 }
 
-#topic>h1 {
-  font-size:25px !important;
-  font-weight:normal !important;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family:Calibri,Helvetica,Verdana,sans-serif !important;
   font-weight:normal !important;
