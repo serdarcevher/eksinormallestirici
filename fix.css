@@ -109,7 +109,22 @@ body.theme-enabled > header {
 
 #top-navigation li a {
   padding:0 !important;
+}
+
+.light-theme #top-navigation li a {
   color:#d4d4d4 !important;
+}
+
+#top-navigation .dropdown-menu li a {
+  padding: 0 8px !important;
+}
+
+.light-theme #top-navigation .dropdown-menu li a {
+  color:#0027b8 !important;
+}
+
+.dark-theme #top-navigation li a {
+  color:#d89630 !important;
 }
 
 #top-navigation li a.new-update {
