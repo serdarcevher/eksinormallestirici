@@ -539,7 +539,7 @@ ul.topic-list a.empty-index-item {
 */
 #entry-list>li {
     position: relative;
-    padding: 4px 0 40px 0 !important;
+    padding: 4px 0px 30px !important;
 }
 
 #entry-list>li {
