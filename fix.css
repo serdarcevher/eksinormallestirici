@@ -495,8 +495,14 @@ html.no-touch body.dark-theme .topic-list li>a:hover {
   background-color:#404040 !important;
 }
 
+/* x entry daha goster cubugu */
+.dark-theme #topic .showall.more-data:hover{
+  background: #4A4A4A;
+}
 
-
+.light-theme #topic .showall.more-data:hover{
+  background: #d8d8d8;
+}
 
 #entry-list .content {
   max-height:100% !important;
