@@ -776,7 +776,7 @@ div.sub-title-menu a {
 }
 
 .dark-theme div.sub-title-menu a {
-  color:#4A4A4A !important;
+  color:#d89630 !important;
 }
 
 
@@ -790,6 +790,9 @@ div.sub-title-menu a {
   background-color:#2d2d2d !important;
 }
 
+.dark-theme #in-topic-search-options a:hover{
+  background-color:#4A4A4A !important;
+}
 
 /* şükela modu restorasyonu */
 
@@ -816,7 +819,7 @@ span.nice-modu-toggler a span {
 
 .dark-theme span.nice-modu-toggler a:after {
   content: 'şükela modu';
-  color: #4A4A4A !important;
+  color: #d89630 !important;
 }
 
 .light-theme a#sukela-mod-link:after {
