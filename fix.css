@@ -307,6 +307,11 @@ ul#entry-list {
 .dark-theme #entry-list footer .feedback svg{
   fill: #4A4A4A;
 }
+
+.dark-theme .sub-title-menu #topic-share-menu svg{
+  fill: #4A4A4A;
+}
+
 #entry-list footer .favorite-count {
   font-size:.9em !important;
 }
