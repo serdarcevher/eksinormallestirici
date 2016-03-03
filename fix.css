@@ -334,8 +334,11 @@ ul#entry-list {
 h1,h2,h3,h4,h5,h6 {
     font-family: Calibri,Helvetica,Verdana,sans-serif !important;
     font-weight: normal !important;
-    color: #000 !important;
     line-height: 1.618 !important;
+}
+.light-theme h1,.light-theme h2,.light-theme h3,.light-theme h4,.light-theme h5,.light-theme h6{
+
+    color: #000 !important;
 }
 
 h1 {
