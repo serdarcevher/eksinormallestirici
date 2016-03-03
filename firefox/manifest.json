@@ -1,17 +1,21 @@
 {
-  "name": "Eksi Normallestirici",
+  "name": "Eksi Sozluk Normallestirici",
   "manifest_version": 2,
-  "version": "0.99",
-  "description": "Ekşi Sözlük renklerini orijinal haline döndürür",
-  "author": "Serdar Cevher",
+  "version": "0.96",
+  "description": "Eksi Sozluk renklerini orijinal haline dondurur.",
+  "author": "Can Celasun",
   "permissions": ["storage"],
   "icons": { "16": "icon16.png",
            "48": "icon48.png",
           "128": "icon128.png" },
   "browser_action": {
-    "name": "Eksi Normallestirici",
-    "icons": ["icon.png"],
     "default_icon": "icon.png"
+  },
+  "applications": {
+    "gecko": {
+      "id": "dcelasun@gmail.com",
+      "strict_min_version": "45.0"
+    }
   },
   "content_scripts": [
     {
