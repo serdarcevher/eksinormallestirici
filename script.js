@@ -45,9 +45,16 @@
 	// Entry Numaralarını Geri Getir.
 	function setEntryNumbers($entryPerPage)
 	{
+		var $currentPage =  1;
 		var $entryWrapper = $(document.getElementById("entry-list"));
-		var $currentPage = parseInt($("div.pager:first").attr("data-currentpage")) || 1;
-
+		
+		var $pageMatcher = location.href.match(/[&|\?]p=([0-9]+)&?/i);
+		
+		if ( $pageMatcher )
+		{
+			$currentPage = parseInt($pageMatcher[1]);
+		}
+		
 		if ( $entryWrapper.length )
 		{
 			var $children = $entryWrapper.children("li");
