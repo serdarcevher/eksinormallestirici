@@ -307,6 +307,11 @@ ul#entry-list {
 .dark-theme #entry-list footer .feedback svg{
   fill: #4A4A4A;
 }
+
+.dark-theme .sub-title-menu #topic-share-menu svg{
+  fill: #4A4A4A;
+}
+
 #entry-list footer .favorite-count {
   font-size:.9em !important;
 }
@@ -490,8 +495,14 @@ html.no-touch body.dark-theme .topic-list li>a:hover {
   background-color:#404040 !important;
 }
 
+/* x entry daha goster cubugu */
+.dark-theme #topic .showall.more-data:hover{
+  background: #4A4A4A;
+}
 
-
+.light-theme #topic .showall.more-data:hover{
+  background: #d8d8d8;
+}
 
 #entry-list .content {
   max-height:100% !important;
@@ -528,7 +539,7 @@ ul.topic-list a.empty-index-item {
 */
 #entry-list>li {
     position: relative;
-    padding: 4px 0 40px 0 !important;
+    padding: 4px 0px 30px !important;
 }
 
 #entry-list>li {
@@ -776,7 +787,7 @@ div.sub-title-menu a {
 }
 
 .dark-theme div.sub-title-menu a {
-  color:#4A4A4A !important;
+  color:#d89630 !important;
 }
 
 
@@ -790,6 +801,9 @@ div.sub-title-menu a {
   background-color:#2d2d2d !important;
 }
 
+.dark-theme #in-topic-search-options a:hover{
+  background-color:#4A4A4A !important;
+}
 
 /* şükela modu restorasyonu */
 
@@ -816,7 +830,7 @@ span.nice-modu-toggler a span {
 
 .dark-theme span.nice-modu-toggler a:after {
   content: 'şükela modu';
-  color: #4A4A4A !important;
+  color: #d89630 !important;
 }
 
 .light-theme a#sukela-mod-link:after {
