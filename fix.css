@@ -873,3 +873,10 @@ button.primary[type=submit] {
   height:25px !important;
   padding:2px 10px !important;
 }
+
+
+/* ekşi şeyler linkini üst kısımdan kaldır */
+
+a.eksiseyler-logo {
+  display: none !important;
+}
