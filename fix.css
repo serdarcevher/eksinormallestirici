@@ -880,3 +880,11 @@ button.primary[type=submit] {
 a.eksiseyler-logo {
   display: none !important;
 }
+
+/* sub-ethadaki ekşi şeyler logosunu boyutlandır */
+
+img.eksi-seyler-subetha-logo {
+	width: 88px;
+	height: 31px;
+}
+
