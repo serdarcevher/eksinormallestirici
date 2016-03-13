@@ -26,9 +26,9 @@
 		// Tercihler Sayfasından İlgili Değeri Alıp Session Storage'e Atalım.
 		$.get($optionsLink.attr("href"), function(result){
 
-			var $value = result.match(/<input\s+type="hidden"\s+id="TopicPageSize"\s+name="TopicPageSize"\s+value="([0-9]+)"\s*\/>/);
+			var $value = $(result).find('#TopicPageSize').attr('value');
 
-			var $topicSize = parseInt($value[1]);
+			var $topicSize = parseInt($value);
 
 			sessionStorage.setItem("topicPageSize", $topicSize);
 
