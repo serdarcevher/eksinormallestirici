@@ -109,7 +109,7 @@
       "</h2>"+
       "<img src=\"" + eksi_seyler_logo + "\" alt=\"ekşi şeyler\" class=\"logo\">"+
       "<div class=\"details\">"+
-        "<p>entrylere izinsiz editör dokunuşu</p>"+
+        "<p>\"yaptıysak kullanacaksınız arkadaşım!\"</p>"+
         "<footer>"+
           "<address>"+
             "<a href=\"/biri/kanzuk\" rel=\"author\">kanzuk</a>"+

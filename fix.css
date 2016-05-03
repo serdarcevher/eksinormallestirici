@@ -880,3 +880,9 @@ button.primary[type=submit] {
 a.eksiseyler-logo {
   display: none !important;
 }
+
+/* ekşi şeyler widget'ını sağ taraftan kaldır */
+
+aside#aside iframe {
+  display:none !important;
+}
