@@ -50,10 +50,19 @@
 
 		var $pageMatcher = location.href.match(/[&|\?]p=([0-9]+)&?/i);
 
+	  var $pagers      = $(document.getElementsByClassName('pager'));
+	  var $pagerEntry  = $pagers[$pagers.length-1];
+	  var $pagerPage   = parseInt($pagerEntry.getAttribute('data-currentpage'));
+
 		if ( $pageMatcher )
 		{
 			$currentPage = parseInt($pageMatcher[1]);
 		}
+		else if( $pagerPage )
+		{
+			$currentPage = $pagerPage;
+		}
+
 
 		if ( $entryWrapper.length )
 		{
