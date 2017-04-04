@@ -35,6 +35,15 @@ body.dark-theme, body.dark-theme .modal, body.dark-theme #top-bar>#advanced-sear
   background-color:#2d2d2d !important;
 }
 
+.dark-theme .ui-autocomplete li div {
+  color: #ebebeb !important;
+}
+
+.dark-theme .ui-autocomplete li div.ui-state-active {
+  color: black !important;
+}
+
+
 a {
   color: #0027b8 !important;
 }
@@ -419,7 +428,29 @@ h6 {
   border-top:4px solid #4A4A4A !important;
 }
 
+.instapaper_body #content-body {
+  width:660px !important;
+}
 
+.instapaper_body #message-thread-title {
+  font-size:18px !important;
+}
+
+.instapaper_body h1 {
+  font-size:20px !important;
+}
+
+.instapaper_body h2 {
+  font-size:16px !important;
+}
+
+#message-thread .incoming, #message-thread .outgoing {
+  font-size:12px !important;
+}
+
+#threads li article h2 {
+  font-size:16px !important;
+}
 
 
 fieldset.vertical {
@@ -637,6 +668,7 @@ button.primary, button.primary:hover {
 }
 
 .dark-theme button.primary, dark-theme button.primary:hover {
+  background-image: none !important;
   background-color:#BA9967 !important;
   font-family:Verdana,sans-serif !important;
   color:white !important;
@@ -886,3 +918,292 @@ a.eksiseyler-logo {
 aside#aside iframe {
   display:none !important;
 }
+
+
+
+
+
+
+/* tema++ uyumluluk modu */
+
+#arkaplan {
+  display: none !important;
+}
+
+body.temaplusplus.dark-theme .hed, body.temaplusplus.dark-theme .hed3 {
+  background-color:#2d2d2d !important;
+}
+
+body.temaplusplus.dark-theme .topic-list li > a, body.temaplusplus.dark-theme .topic-list li > a small, body.temaplusplus.dark-theme .topic-list.partial > li > a > small, body.temaplusplus.dark-theme #feed-refresh-link {
+  color:#d89630 !important;
+}
+
+body.temaplusplus.dark-theme #title a, body.temaplusplus.dark-theme #ilkbuton, body.temaplusplus.dark-theme #spolari_tersle, body.temaplusplus.dark-theme #site-footer a, body.temaplusplus.dark-theme .tabs > li.active > a {
+  color: #d89630 !important;
+}
+
+body.temaplusplus.dark-theme .btn-group > .btn:hover, body.temaplusplus.dark-theme .btn-group > .btn:focus, body.temaplusplus.dark-theme .btn-group > .btn:active, body.temaplusplus.dark-theme .btn-group > .btn.active {
+  background-color: #d89630!important;
+  color:white !important;
+}
+
+/* futurama #backtop elemanını html yerine body'e append ettiği zaman bu satır kullanılabilir ve aşağıdaki display:none iptal edilebilir
+body.temaplusplus.dark-theme #backtop {
+  background-color:#d89630 !important;
+}
+*/
+
+#backtop {
+  display:none !important;
+}
+
+body.temaplusplus {
+  padding-top:61px !important;
+  font-size:12px !important;
+}
+
+body.temaplusplus header, body.temaplusplus header #top-bar {
+  height:65px !important;
+}
+
+body.temaplusplus, body.temaplusplus .yenimenu {
+  font-family:"Verdana",sans-serif !important;
+}
+
+html.no-touch .yenimenu, html.no-touch #sfmenu {
+  font-size:12px;
+}
+
+body.temaplusplus.dark-theme .yenimenu, body.temaplusplus.dark-theme #sfmenu {
+  background-color: #2d2d2d!important;
+  color:#d89630 !important;
+}
+
+body.temaplusplus h1, body.temaplusplus h2, body.temaplusplus h3, body.temaplusplus h4, body.temaplusplus h5, body.temaplusplus h6 {
+  font-family:Calibri,Helvetica,Verdana,sans-serif !important;
+  font-weight:normal !important;
+}
+
+body.temaplusplus #sub-navigation {
+  display:inline-block !important;
+  top:0px !important;
+}
+
+body.temaplusplus #logo a {
+  background-position:0px !important;
+}
+
+body.temaplusplus #container #index-section {
+  top:75px !important;
+}
+
+body.temaplusplus #partial-index .topic-list {
+  font-size: inherit !important;
+}
+
+body.temaplusplus #partial-index .topic-list li {
+  border-bottom: 0px !important;
+}
+
+body.temaplusplus #sponsored-index-item-first, body.temaplusplus #sponsored-index-item-second, body.temaplusplus #sponsored-index-item-third {
+  border-top:0px !important;
+}
+
+body.temaplusplus #partial-index .topic-list.partial > li > a {
+  padding:4px 0 !important;
+  padding-right:25px !important;
+  font-size:1em !important;
+}
+
+body.temaplusplus #partial-index .topic-list li>a small {
+  top:7px !important;
+  font-size:0.75em !important;
+  color:#666 !important;
+}
+
+body.temaplusplus #topic .hed3 {
+  top:64px !important;
+  height:100px !important;
+}
+
+body.temaplusplus #topic #title {
+  margin:0px !important;
+  top:90px !important;
+}
+
+body.temaplusplus span#ilkbuton, body.temaplusplus span#spolari_tersle {
+  font-size:20px !important;
+}
+
+body.temaplusplus #entry-list {
+  font-size:12px !important;
+}
+
+body.temaplusplus .info {
+  font-size:14px !important;
+}
+
+body.temaplusplus #in-topic-search-options.open a {
+  font-size:12px !important;
+}
+
+body.temaplusplus #in-topic-search-options .paylasgrup i {
+  font-size:20px !important;
+}
+
+body.temaplusplus #in-topic-search-options .paylasgrup span {
+  width:39px !important;
+}
+
+body.temaplusplus #entry-list {
+  margin-top:20px !important;
+}
+
+body.temaplusplus #entry-list > li {
+  padding: 4px 0px 30px !important;
+  border-bottom:0px !important;
+}
+
+body.temaplusplus .light-theme .topic-list li {
+  border-top: 1px solid #D2D2D2 !important;
+}
+
+body.temaplusplus .dark-theme .topic-list li {
+  border-top: 1px solid #4A4A4A !important;
+}
+
+
+body.temaplusplus #entry-list>li:first-child {
+  border-top:0px !important;
+}
+
+body.temaplusplus #entry-list footer .permalink {
+  font-size:0.7em !important;
+}
+
+body.temaplusplus .dark-theme #entry-list>li {
+  border-top: 1px solid #4A4A4A !important;
+}
+
+body.temaplusplus .dark-theme #entry-list>li:last-child {
+  border-bottom: 0 !important;
+}
+
+body.temaplusplus #entry-list>li .content {
+  border-top:0px !important;
+  padding-top:0px !important;
+}
+
+body.temaplusplus #top-navigation li a.new-update .eksico {
+  display:none !important;
+}
+
+body.temaplusplus #top-navigation li:not(#options-dropdown) .eksico {
+  display:inline-block !important;
+  visibility:hidden !important;
+}
+
+body.temaplusplus #entry-list footer svg.eksico {
+  width:25px !important;
+  height:13px !important;
+  fill: #b0bec5 !important;
+  margin-right:0px !important;
+}
+
+body.temaplusplus.dark-theme #entry-list footer .feedback svg, body.temaplusplus.dark-theme .sub-title-menu #topic-share-menu svg {
+  fill: #4A4A4A !important;
+}
+
+body.temaplusplus.dark-theme .gomulu_after .content .fa, body.temaplusplus.dark-theme .arrow-spo {
+  color: #d89630 !important;
+}
+
+body.temaplusplus.dark-theme #topic-channel-info #topic-channels li.channel > a, body.temaplusplus.dark-theme #topic-channel-info #topic-channel-options > li > .name.active {
+  background-color: #2d2d2d !important;
+  color:#d89630 !important;
+  border:1px solid #d89630 !important;
+}
+
+
+
+
+
+body.temaplusplus #top-navigation > ul .new-update, body.temaplusplus #sub-navigation > ul .new-update {
+  line-height:35px !important;
+  padding-left:0px !important;
+  padding-right:20px !important;
+  font-weight:normal !important;
+}
+
+body.temaplusplus #entry-list>li:before, body.temaplusplus #entry-list footer .permalink, body.temaplusplus #entry-list .read-more-link-wrapper a, body.temaplusplus .sub-title-menu > a, body.temaplusplus .sub-title-menu > div > .dropdown > a, body.temaplusplus #entry-list footer .feedback a {
+  color: #666 !important;
+}
+
+body.temaplusplus .topic-list li .detail {
+  color: #666 !important;
+}
+
+body.temaplusplus .other.dropdown {
+  margin-left:5px !important;
+}
+
+body.temaplusplus.light-theme button.primary {
+  color:white !important;
+  border:0px !important;
+}
+
+body.temaplusplus.dark-theme button.primary {
+  color:black !important;
+  border:0px !important;
+}
+
+body.temaplusplus.dark-theme textarea {
+  background-color: #464646 !important;
+  color:white !important;
+}
+
+body.temaplusplus.dark-theme .edittools button {
+  background-color:#202020 !important;
+  color:white !important;
+}
+
+body.temaplusplus.light-theme .pager select {
+  background:white !important;
+}
+
+body.temaplusplus.dark-theme .pager > a, body.temaplusplus.dark-theme .pager select {
+  color:#d89630 !important;
+}
+
+body.temaplusplus.dark-theme .topic-list li:hover > a small, body.temaplusplus.dark-theme .topic-list.partial > li:hover > a > small, body.temaplusplus.dark-theme #feed-refresh-link:hover, body.temaplusplus.dark-theme .topic-list li:hover a, body.temaplusplus.dark-theme .topic-list li:hover small {
+  background-color:#2d2d2d !important;
+  color:#d89630 !important;
+}
+
+body.temaplusplus.dark-theme a.more-data:hover, body.temaplusplus.dark-theme #in-topic-search-options > li:hover, body.temaplusplus.dark-theme #in-topic-search-options > li:not(.paylasgrup) a:hover, body.temaplusplus.dark-theme .ui-autocomplete > li a.ui-state-focus {
+  background-color:#2d2d2d !important;
+  color:#d89630 !important;
+}
+
+body.temaplusplus.dark-theme .ui-autocomplete > li a:hover, body.temaplusplus.dark-theme .pager > a:hover, body.temaplusplus.dark-theme .pager select:hover, body.temaplusplus.dark-theme .dropdown .dropdown-menu li:hover, body.temaplusplus.dark-theme .dropdown .dropdown-menu li:hover a {
+  background-color:#2d2d2d !important;
+  color:#d89630 !important;
+}
+
+body.temaplusplus.dark-theme .ui-autocomplete>li>div.ui-state-active, body.temaplusplus.dark-theme .ui-autocomplete>li>div:hover {
+  background-color:#2d2d2d !important;
+  color:#d89630 !important;
+}
+
+
+
+body.temaplusplus.light-theme #threads li article.unread, body.temaplusplus.light-theme #message-thread .incoming, body.temaplusplus.light-theme #message-thread .outgoing {
+  background-color:#eeeeee !important;
+
+}
+
+body.temaplusplus.dark-theme #threads li article p, body.temaplusplus.dark-theme #message-thread .incoming, body.temaplusplus.dark-theme #message-thread .outgoing {
+  color:silver !important;
+}
+
+/* tema++ uyumluluk modu sonu */

@@ -1,8 +1,8 @@
 {
   "name": "Eksi Normallestirici",
   "manifest_version": 2,
-  "version": "1.0.1",
-  "description": "Ekşi Sözlük renklerini orijinal haline döndürür",
+  "version": "1.1.0",
+  "description": "Ekşi Sözlük görünümünü Beta zamanına döndürür",
   "author": "Serdar Cevher",
   "permissions": ["storage"],
   "icons": { "16": "icon16.png",
@@ -13,6 +13,10 @@
     "icons": ["icon.png"],
     "default_icon": "icon.png"
   },
+  "permissions":["https://eksisozluk.com/*"],
+  "background":{
+       "scripts":[ "background.js" ]
+   },
   "content_scripts": [
     {
       "matches": ["https://eksisozluk.com/*"],
