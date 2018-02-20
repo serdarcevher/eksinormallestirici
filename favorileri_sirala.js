@@ -1,6 +1,6 @@
 jQuery(document).ready(function(){
 
-  var list = $('ul#entry-list');
+  var list = $('ul#entry-item-list');
   var listItems = list.find('li[data-favorite-count]').sort(function(a,b){ return $(b).attr('data-favorite-count') - $(a).attr('data-favorite-count'); });
   list.find('li[data-favorite-count]').remove();
   list.append(listItems);

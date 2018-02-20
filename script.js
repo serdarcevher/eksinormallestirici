@@ -46,7 +46,7 @@
 	function setEntryNumbers($entryPerPage)
 	{
 		var $currentPage =  1;
-		var $entryWrapper = $(document.getElementById("entry-list"));
+		var $entryWrapper = $(document.getElementById("entry-item-list"));
 
 		var $pageMatcher = location.href.match(/[&|\?]p=([0-9]+)&?/i);
 
