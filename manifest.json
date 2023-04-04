@@ -4,7 +4,7 @@
   "version": "1.1.2",
   "description": "Ekşi Sözlük görünümünü Beta zamanına döndürür",
   "author": "Serdar Cevher",
-  "permissions": ["storage"],
+  "permissions": ["https://eksisozluk.com/*", "https://eksisozluk2023.com/*"],
   "icons": { "16": "icon16.png",
            "48": "icon48.png",
           "128": "icon128.png" },
@@ -13,10 +13,6 @@
     "icons": ["icon.png"],
     "default_icon": "icon.png"
   },
-  "host_permissions": [
-    "https://eksisozluk.com/*",
-    "https://eksisozluk2023.com/*"
-  ],
   "background":{
        "scripts":[ "background.js" ]
    },
