@@ -1,7 +1,7 @@
 {
   "name": "Eksi Normallestirici",
   "manifest_version": 2,
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Ekşi Sözlük görünümünü Beta zamanına döndürür",
   "author": "Serdar Cevher",
   "permissions": ["storage"],
@@ -13,13 +13,13 @@
     "icons": ["icon.png"],
     "default_icon": "icon.png"
   },
-  "permissions":["https://eksisozluk.com/*"],
+  "permissions":["https://eksisozluk.com/*", "https://eksisozluk2023.com/*"],
   "background":{
        "scripts":[ "background.js" ]
    },
   "content_scripts": [
     {
-      "matches": ["https://eksisozluk.com/*"],
+      "matches": ["https://eksisozluk.com/*", "https://eksisozluk2023.com/*"],
       "js": ["jquery.min.js","script.js"],
       "css": ["fix.css"]
     }

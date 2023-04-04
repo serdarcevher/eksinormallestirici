@@ -19,7 +19,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://eksisozluk.com/*"],
+      "matches": ["https://eksisozluk.com/*", "https://eksisozluk2023.com/*"],
       "js": ["jquery.min.js","script.js"],
       "css": ["fix.css"]
     }
