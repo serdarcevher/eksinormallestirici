@@ -13,7 +13,10 @@
     "icons": ["icon.png"],
     "default_icon": "icon.png"
   },
-  "permissions":["https://eksisozluk.com/*", "https://eksisozluk2023.com/*"],
+  "host_permissions": [
+    "https://eksisozluk.com/*",
+    "https://eksisozluk2023.com/*"
+  ],
   "background":{
        "scripts":[ "background.js" ]
    },
