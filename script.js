@@ -1,13 +1,13 @@
 (function($){
 
 	// Araştır ve Sub-Etha Düğmelerini Geri Getir.
-	var $searcherTab = $(document.getElementById("in-topic-search-options"));
+	var $searcherTab = $(document.getElementById("in-topic-search-menu"));
 
 	if ( $searcherTab.length )
 	{
 		var $titleValue = $("h1[id='title']").attr("data-title");
 
-		$searcherTab.prepend("<li><a href='https://google.com/search?q="+$titleValue+"' target='_blank'>araştır</a></li>");
+		$searcherTab.before("<div><a href='https://google.com/search?q="+$titleValue+"' target='_blank'>araştır</a></div>");
 	}
 
 	$("#options-dropdown > ul").prepend("<li><a href='/sub-etha' target='_blank'>sub-etha</a></li>");
