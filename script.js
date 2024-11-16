@@ -1,5 +1,15 @@
 (function($){
 
+	// Firefox'ta nedense arama kutusunun placeholder'ı yükleme sonrasında kayboluyor. Geri getirelim.
+	if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+		setTimeout(function() {
+			const searchBox = document.getElementById('search-textbox');
+			if (searchBox) {
+				searchBox.setAttribute('placeholder', 'başlık, #entry, @yazar');
+			}
+		}, 100);
+	}
+
 	// Araştır ve Sub-Etha Düğmelerini Geri Getir.
 	var $searcherTab = $(document.getElementById("in-topic-search-options"));
 
