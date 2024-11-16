@@ -1,13 +1,10 @@
-chrome.browserAction.onClicked.addListener(function (tab) { //kullanici ikona tikladiginda calisir
+chrome.action.onClicked.addListener(function (tab) { //kullanici ikona tikladiginda calisir
     if (
-        tab.url.indexOf("https://eksisozluk.com/") != -1 || 
-        tab.url.indexOf("https://eksisozluk2023.com/") != -1 ||
-        tab.url.indexOf("https://eksisozluk42.com/") != -1 ||
-        tab.url.indexOf("https://eksisozluk1923.com/") != -1)
+        tab.url.indexOf("https://eksisozluk.com/") != -1)
         {
-
-        chrome.tabs.executeScript(tab.id, {
-            "file": "favorileri_sirala.js"
+        chrome.scripting.executeScript({
+            target: { tabId: tab.id },
+            files: ['favorileri_sirala.js']
         });
     }
 });
