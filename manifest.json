@@ -1,7 +1,7 @@
 {
   "name": "Eksi Normallestirici",
   "manifest_version": 3,
-  "version": "1.1.7",
+  "version": "1.2.0",
   "description": "Ekşi Sözlük görünümünü Beta zamanına döndürür",
   "author": "Serdar Cevher",
   "permissions": ["activeTab", "scripting"],
@@ -18,7 +18,7 @@
   "content_scripts": [
     {
       "matches": ["https://eksisozluk.com/*"],
-      "js": ["jquery.min.js", "script.js"],
+      "js": ["script.js", "favorileri_sirala.js"],
       "css": ["fix.css"]
     }
   ]
