@@ -1,7 +1,7 @@
 {
   "name": "Eksi Normallestirici",
   "manifest_version": 3,
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Ekşi Sözlük görünümünü Beta zamanına döndürür",
   "author": "Ender Gökay, Serdar Cevher",
   "browser_specific_settings": {
