@@ -523,6 +523,15 @@ html.no-touch .dark-theme #partial-index::-webkit-scrollbar-thumb {
   border-radius:4px !important;
 }
 
+/* Firefox için scrollbar stili */
+html.no-touch #partial-index {
+  scrollbar-color: #dedede transparent !important;
+}
+  
+html.no-touch .dark-theme #partial-index {
+  scrollbar-color: #3B3B3B transparent !important;
+}
+
 html.no-touch .topic-list li>a:hover {
   background-color:#d8d8d8 !important;
 }
