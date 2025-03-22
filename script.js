@@ -1,4 +1,55 @@
 document.addEventListener("DOMContentLoaded", () => {
+  console.log("Eklenti yüklendi");
+
+  // Olası trol kullanıcıları saklamak için dizi
+  let possibleTrolls = [];
+
+  // Storage'dan trol listesini yükle
+  chrome.storage.local.get(["trollList"], (result) => {
+    if (result.trollList) {
+      possibleTrolls = result.trollList;
+      markPossibleTrolls();
+    }
+  });
+
+  // Entry'leri işaretleme fonksiyonu
+  function markPossibleTrolls() {
+    document.querySelectorAll("#entry-item-list li").forEach((entry) => {
+      const authorName = entry.getAttribute("data-author").trim().toLowerCase();
+      if (possibleTrolls.includes(authorName)) {
+        entry.classList.add("possible-troll");
+      } else {
+        entry.classList.remove("possible-troll");
+      }
+    });
+  }
+
+  // Mesajları dinle (popup.js'den gelen güncellemeler için)
+  chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+    if (message.action === "updateTrollList") {
+      possibleTrolls = message.trollList;
+      markPossibleTrolls();
+    }
+  });
+
+  // Sayfa değişikliklerini izle
+  const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      if (
+        mutation.type === "childList" &&
+        mutation.target.id === "entry-item-list"
+      ) {
+        markPossibleTrolls();
+      }
+    });
+  });
+
+  // Observer'ı başlat
+  const entryList = document.getElementById("entry-item-list");
+  if (entryList) {
+    observer.observe(entryList, { childList: true, subtree: true });
+  }
+
   // Firefox placeholder düzeltmesi
   if (navigator.userAgent.toLowerCase().indexOf("firefox") > -1) {
     setTimeout(() => {

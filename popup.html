@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<style>
+		body {
+			width: 300px;
+			padding: 10px;
+			font-family: Arial, sans-serif;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+		}
+
+		#trollList {
+			width: 100%;
+			height: 200px;
+			margin-top: 10px;
+		}
+
+		.button-container {
+			display: flex;
+			gap: 10px;
+		}
+
+		button {
+			padding: 5px 10px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h3>Trol Listesi Yönetimi</h3>
+		<p>Her satıra bir kullanıcı adı gelecek şekilde liste oluşturun:</p>
+		<textarea id="trollList" placeholder="örnek:&#10;ssg&#10;kanzuk"></textarea>
+		<div class="button-container">
+			<button id="save">Kaydet</button>
+			<button id="clear">Temizle</button>
+		</div>
+	</div>
+	<script src="popup.js"></script>
+</body>
+
+</html>

@@ -1,20 +1,21 @@
 {
   "name": "Eksi Normallestirici",
   "manifest_version": 3,
-  "version": "1.2.1",
+  "version": "1.3.0",
   "description": "Ekşi Sözlük görünümünü Beta zamanına döndürür",
-  "author": "Ender Gökay, Serdar Cevher",
+  "author": "Serdar Cevher, Ender Gökay",
   "browser_specific_settings": {
     "gecko": {
       "id": "{450c3834-58e2-40ee-b83c-9705634b4e6d}",
       "strict_min_version": "109.0"
     }
   },
-  "permissions": ["activeTab", "scripting"],
+  "permissions": ["activeTab", "scripting", "storage"],
   "host_permissions": ["https://eksisozluk.com/*"],
   "icons": { "16": "icon16.png", "48": "icon48.png", "128": "icon128.png" },
   "action": {
-    "default_icon": "icon.png"
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
   },
   "background": {
     "scripts": ["background.js"]
@@ -27,4 +28,4 @@
       "run_at": "document_start"
     }
   ]
-} 
+}
