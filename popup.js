@@ -2,6 +2,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const trollList = document.getElementById("trollList");
   const saveButton = document.getElementById("save");
   const clearButton = document.getElementById("clear");
+  const sortFavoritesButton = document.getElementById("sortFavorites");
+
+  // Favorileri sıralama butonu için event listener
+  sortFavoritesButton.addEventListener("click", () => {
+    chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+      chrome.tabs.sendMessage(tabs[0].id, {
+        action: "sortFavorites",
+      });
+    });
+  });
 
   // Kaydedilmiş listeyi yükle
   chrome.storage.local.get(["trollList"], (result) => {

@@ -29,6 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (message.action === "updateTrollList") {
       possibleTrolls = message.trollList;
       markPossibleTrolls();
+    } else if (message.action === "sortFavorites") {
+      // Favorileri sıralama fonksiyonunu çağır
+      const event = new Event("favorileriSirala");
+      document.dispatchEvent(event);
     }
   });
 

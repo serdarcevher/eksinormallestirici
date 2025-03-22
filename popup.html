@@ -31,11 +31,27 @@
 			padding: 5px 10px;
 			cursor: pointer;
 		}
+
+		.sort-favorites {
+			width: 100%;
+			margin-bottom: 10px;
+			padding: 8px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		.sort-favorites:hover {
+			background-color: #45a049;
+		}
 	</style>
 </head>
 
 <body>
 	<div class="container">
+		<button id="sortFavorites" class="sort-favorites">Favorilere Göre Sırala</button>
 		<h3>Trol Listesi Yönetimi</h3>
 		<p>Her satıra bir kullanıcı adı gelecek şekilde liste oluşturun:</p>
 		<textarea id="trollList" placeholder="örnek:&#10;ssg&#10;kanzuk"></textarea>
