@@ -1253,3 +1253,32 @@ body.temaplusplus.dark-theme #threads li article p, body.temaplusplus.dark-theme
 .possible-troll:hover {
   background-color: rgba(255, 68, 68, 0.1) !important;
 }
+
+
+/* troll belirtme modu */
+.possible-troll {
+	border-left: 4px solid #ff4444 !important;
+	background-color: rgba(255, 68, 68, 0.05) !important;
+	margin-bottom: 30px;
+  }
+  
+  .possible-troll .content {
+	padding-left: 10px;
+  }
+  
+  .possible-troll:hover {
+	background-color: rgba(255, 68, 68, 0.1) !important;
+  }
+  
+  /* favori listesindeki troller için özel stil */
+  .favorite-list-popup ul li.possible-troll {
+	border-left: 4px solid #ff4444 !important;
+	background-color: rgba(255, 68, 68, 0.05) !important;
+	margin-bottom: 0 !important;
+	padding-left: 10px !important;
+  }
+  
+  .favorite-list-popup ul li.possible-troll:hover {
+	background-color: rgba(255, 68, 68, 0.1) !important;
+  }
+  

@@ -24,11 +24,67 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Favori listesindeki kullanıcıları işaretleme fonksiyonu
+  function markFavoriteListTrolls(favoriteList) {
+    if (!favoriteList) return;
+
+    favoriteList.querySelectorAll("li").forEach((li) => {
+      const authorLink = li.querySelector("a");
+      if (authorLink) {
+        const authorName = authorLink.textContent
+          .replace("@", "")
+          .trim()
+          .toLowerCase();
+        if (possibleTrolls.includes(authorName)) {
+          li.classList.add("possible-troll");
+        } else {
+          li.classList.remove("possible-troll");
+        }
+      }
+    });
+  }
+
+  // Çaylak favorileri linkini dinle
+  document.addEventListener("click", (e) => {
+    if (e.target.matches("#show-caylak-favs-link")) {
+      // Kısa bir gecikme ile yeni yüklenen listeyi işaretle
+      setTimeout(() => {
+        const favoriteList = document.querySelector(".favorite-list-popup ul");
+        if (favoriteList) {
+          markFavoriteListTrolls(favoriteList);
+        }
+      }, 500); // 500ms gecikme
+    }
+  });
+
+  // Favori listesi popup'ını izle
+  const favoriteListObserver = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      if (mutation.type === "childList") {
+        const favoriteList = document.querySelector(".favorite-list-popup ul");
+        if (favoriteList) {
+          markFavoriteListTrolls(favoriteList);
+        }
+      }
+    });
+  });
+
+  // Tüm sayfayı izle (favori listesi popup'ı için)
+  favoriteListObserver.observe(document.body, {
+    childList: true,
+    subtree: true,
+  });
+
   // Mesajları dinle (popup.js'den gelen güncellemeler için)
   chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if (message.action === "updateTrollList") {
       possibleTrolls = message.trollList;
       markPossibleTrolls();
+      // Eğer favori listesi açıksa onu da güncelle
+      const favoriteList = document.querySelector(".favorite-list-popup ul");
+      if (favoriteList) {
+        markFavoriteListTrolls(favoriteList);
+      }
     } else if (message.action === "sortFavorites") {
       // Favorileri sıralama fonksiyonunu çağır
       const event = new Event("favorileriSirala");
