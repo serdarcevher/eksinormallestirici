@@ -1,5 +1,9 @@
+// Eklentinin yüklendiğini kontrol et
+console.log("Ekşi Normalleştirici: Eklenti yüklendi");
+
+// DOMContentLoaded event listener'ı ekle
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("Eklenti yüklendi");
+  console.log("Ekşi Normalleştirici: DOM yüklendi");
 
   // Olası trol kullanıcıları saklamak için dizi
   let possibleTrolls = [];
@@ -15,11 +19,14 @@ document.addEventListener("DOMContentLoaded", () => {
   // Entry'leri işaretleme fonksiyonu
   function markPossibleTrolls() {
     document.querySelectorAll("#entry-item-list li").forEach((entry) => {
-      const authorName = entry.getAttribute("data-author").trim().toLowerCase();
-      if (possibleTrolls.includes(authorName)) {
-        entry.classList.add("possible-troll");
-      } else {
-        entry.classList.remove("possible-troll");
+      const authorAttr = entry.getAttribute("data-author");
+      if (authorAttr) {
+        const authorName = authorAttr.trim().toLowerCase();
+        if (possibleTrolls.includes(authorName)) {
+          entry.classList.add("possible-troll");
+        } else {
+          entry.classList.remove("possible-troll");
+        }
       }
     });
   }
@@ -30,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     favoriteList.querySelectorAll("li").forEach((li) => {
       const authorLink = li.querySelector("a");
-      if (authorLink) {
+      if (authorLink && authorLink.textContent) {
         const authorName = authorLink.textContent
           .replace("@", "")
           .trim()
